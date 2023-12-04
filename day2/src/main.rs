@@ -23,6 +23,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         .filter(|g| g.is_possible(&requirements))
         .map(|g| g.id)
         .sum();
+
     println!("Solution 1: {solution1}");
     assert_eq!(solution1, 2176);
 
