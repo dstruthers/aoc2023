@@ -9,10 +9,12 @@ const INPUT_FILE: &str = "input.txt";
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let input = fs::read_to_string(INPUT_FILE)?;
     let solution1 = part1(&input)?;
-    println!("First solution = {solution1}");
+    println!("Solution 1: {solution1}");
+    assert_eq!(solution1, 56108);
 
     let solution2 = part2(&input)?;
-    println!("Second solution: {solution2}");
+    println!("Solution 2: {solution2}");
+    assert_eq!(solution2, 55652);
     Ok(())
 }
 
