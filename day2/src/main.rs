@@ -28,8 +28,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     let solution2: usize = games
         .iter()
-        .map(|g| g.minimum_cubes())
-        .map(|mins| mins.into_values().product::<usize>())
+        .map(|g| g.minimum_cubes().into_values().product::<usize>())
         .sum();
 
     println!("Solution 2: {solution2}");
